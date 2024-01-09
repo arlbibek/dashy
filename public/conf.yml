@@ -194,11 +194,7 @@ sections:
       collapsed: false
       hideForGuests: false
     widgets:
-      - type: clock
-        options:
-          timeZone: Asia/Mumbai
-          format: en-GB
-          hideDate: false
+      - type: public-ip
     items:
       - &ref_14
         title: Cloudflare
