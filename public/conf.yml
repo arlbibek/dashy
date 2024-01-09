@@ -1,6 +1,6 @@
 pageInfo:
   title: Dashy 🌺
-  description: 'Welcome to bibek''s dashboard! '
+  description: "Welcome to bibek's dashboard! "
   navLinks:
     - title: GitHub
       path: https://github.com/arlbibek/dashy
@@ -40,7 +40,7 @@ appConfig:
     enableGuestAccess: false
     users:
       - user: bibekaryal
-        hash: AK47bnaM4
+        hash: 325045a85ba2d4e468ee4f3f022ffe2e827888350a14dfada2ae5cf39d9d1bb8
         type: admin
     enableKeycloak: false
   showSplashScreen: false
