@@ -139,53 +139,52 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_6
+      - &ref_7
         title: SSF Portal
         description: Social Security Fund
         icon: https://sosys.ssf.gov.np/Images/favicon.jpg
         url: https://sosys.ssf.gov.np/Modules/REGISTRATION/ContributorLogin.aspx
         target: newtab
         id: 0_1048_ssfportal
-      - &ref_7
+      - &ref_8
         title: OPCR
         description: Online Police Clearance Registration System
         icon: https://opcr.nepalpolice.gov.np/favicon.ico
         url: https://opcr.nepalpolice.gov.np
         target: newtab
         id: 1_1048_opcr
-      - &ref_8
+      - &ref_9
         title: Mero Share
         icon: https://meroshare.cdsc.com.np/assets/img/favicon.png
         url: https://meroshare.cdsc.com.np/
         target: newtab
         id: 2_1048_meroshare
-      - &ref_9
+      - &ref_10
         title: NEPSE
         icon: https://tms52.nepsetms.com.np/assets/images/logo_new.png
         url: https://tms52.nepsetms.com.np/login
         id: 3_1048_nepse
-      - &ref_10
+      - &ref_11
         title: NPSE Alpha
         icon: https://www.nepsealpha.com/images/logo.jpg
         url: https://www.nepsealpha.com/
         id: 4_1048_npsealpha
-      - &ref_11
+      - &ref_12
         title: Khalti
         icon: favicon
         url: https://khalti.com/
         id: 5_1048_khalti
-      - &ref_12
+      - &ref_13
         title: eSewa
         icon: favicon
         url: https://www.esewa.com.np/#/home
         id: 6_1048_esewa
-      - &ref_13
+      - &ref_14
         title: Connect IPS
         icon: https://www.connectips.com/templates/protostar/favicon.ico
         url: https://www.connectips.com/
         id: 7_1048_connectips
     filteredItems:
-      - *ref_6
       - *ref_7
       - *ref_8
       - *ref_9
@@ -193,6 +192,7 @@ sections:
       - *ref_11
       - *ref_12
       - *ref_13
+      - *ref_14
   - name: Domain(s)
     icon: fas fa-rocket
     widgets:
