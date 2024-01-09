@@ -120,10 +120,17 @@ sections:
         url: https://outlook.office.com/mail/
         target: newtab
         id: 2_836_resume
+      - &ref_6
+        title: Cloudflare
+        icon: favicon
+        url: https://dash.cloudflare.com/
+        target: newtab
+        id: 2_836_resume
     filteredItems:
       - *ref_3
       - *ref_4
       - *ref_5
+      - *ref_6
   - name: Nepal Sites
     displayData:
       sortBy: default
@@ -189,12 +196,6 @@ sections:
   - name: Domain(s)
     icon: fas fa-rocket
     widgets:
-      - type: clock
-        options:
-          timeZone: Asia/Kathmandu
-          format: en-GB
-          hideDate: false
-        id: 0_1184_clock
       - type: domain-monitor
           options:
            domain: bibeka.com.np
@@ -203,3 +204,8 @@ sections:
           options:
            domain: lifetimelearning.edu.np
            apiKey: c4d7b24e7561cafff96e1adab9a92e62
+      - type: joke
+          options:
+           safeMode: true
+           language: en
+           category: Programming
