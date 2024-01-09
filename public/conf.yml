@@ -28,17 +28,20 @@ appConfig:
     searchEngine: duckduckgo
     openingMethod: newtab
     searchBangs: {}
-  enableFontAwesome: true
-  enableMaterialDesignIcons: false
+  enableFontAwesome: false
+  enableMaterialDesignIcons: true
   hideComponents:
     hideHeading: false
     hideNav: false
-    hideSearch: false
+    hideSearch: true
     hideSettings: false
     hideFooter: false
   auth:
     enableGuestAccess: false
-    users: []
+    users:
+      - user: bibekaryal
+        hash: AK47bnaM4
+        type: admin
     enableKeycloak: false
   showSplashScreen: false
   preventWriteToDisk: false
@@ -51,8 +54,9 @@ appConfig:
   disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
+  workspaceLandingUrl: https://dashy.bibeka.com.np/
 sections:
-  - name: Date and time
+  - name: Profiles
     icon: fas fa-rocket
     widgets:
       - type: clock
@@ -60,16 +64,29 @@ sections:
           timeZone: Asia/Kathmandu
           format: en-GB
           hideDate: false
+        id: 0_1184_clock
     items:
       - &ref_0
-        title: Dashy Live
-        description: Development a project management links for Dashy
-        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-        url: https://live.dashy.to/
+        title: bibeka.com.np
+        icon: https://bibeka.com.np/images/favicon.png
+        url: https://bibeka.com.np
+        id: 0_1184_bibekacomnp
+      - &ref_1
+        title: arlbibek
+        icon: https://github.com/fluidicon.png
+        url: https://github.com/arlbibek
         target: newtab
-        id: 0_1184_dashylive
+        id: 1_1184_arlbibek
+      - &ref_2
+        title: Reusme
+        icon: <span class="material-symbols-outlined"> picture_as_pdf </span>
+        url: https://bibeka.com.np/resume
+        target: newtab
+        id: 2_1184_reusme
     filteredItems:
       - *ref_0
+      - *ref_1
+      - *ref_2
     displayData:
       sortBy: default
       rows: 1
@@ -84,17 +101,88 @@ sections:
       collapsed: false
       hideForGuests: false
     items:
-      - &ref_6
-        title: bibeka.com.np
-        url: https://bibeka.com.np
+      - &ref_3
+        title: Gmail
+        icon: https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico
+        url: https://mail.google.com/mail
         target: newtab
-        id: 0_520_bibekacomnp
-      - &ref_7
-        title: arlbibek
+        id: 0_836_bibekacomnp
+      - &ref_4
+        title: Proton Mail
         icon: favicon
-        url: https://github.com/arlbibek
+        url: https://account.proton.me/mail
         target: newtab
-        id: 1_520_arlbibek
+        id: 1_836_arlbibek
+      - &ref_5
+        title: Outlook
+        icon: >-
+          https://res.cdn.office.net/owamail/20231215008.09/resources/images/favicons/mail-seen.ico
+        url: https://outlook.office.com/mail/
+        target: newtab
+        id: 2_836_resume
+    filteredItems:
+      - *ref_3
+      - *ref_4
+      - *ref_5
+  - name: Nepal Sites
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_6
+        title: SSF Portal
+        description: Social Security Fund
+        icon: https://sosys.ssf.gov.np/Images/favicon.jpg
+        url: https://sosys.ssf.gov.np/Modules/REGISTRATION/ContributorLogin.aspx
+        target: newtab
+        id: 0_1048_ssfportal
+      - &ref_7
+        title: OPCR
+        description: Online Police Clearance Registration System
+        icon: https://opcr.nepalpolice.gov.np/favicon.ico
+        url: https://opcr.nepalpolice.gov.np
+        target: newtab
+        id: 1_1048_opcr
+      - &ref_8
+        title: Mero Share
+        icon: https://meroshare.cdsc.com.np/assets/img/favicon.png
+        url: https://meroshare.cdsc.com.np/
+        target: newtab
+        id: 2_1048_meroshare
+      - &ref_9
+        title: NEPSE
+        icon: https://tms52.nepsetms.com.np/assets/images/logo_new.png
+        url: https://tms52.nepsetms.com.np/login
+        id: 3_1048_nepse
+      - &ref_10
+        title: NPSE Alpha
+        icon: https://www.nepsealpha.com/images/logo.jpg
+        url: https://www.nepsealpha.com/
+        id: 4_1048_npsealpha
+      - &ref_11
+        title: Khalti
+        icon: favicon
+        url: https://khalti.com/
+        id: 5_1048_khalti
+      - &ref_12
+        title: eSewa
+        icon: favicon
+        url: https://www.esewa.com.np/#/home
+        id: 6_1048_esewa
+      - &ref_13
+        title: Connect IPS
+        icon: https://www.connectips.com/templates/protostar/favicon.ico
+        url: https://www.connectips.com/
+        id: 7_1048_connectips
     filteredItems:
       - *ref_6
       - *ref_7
+      - *ref_8
+      - *ref_9
+      - *ref_10
+      - *ref_11
+      - *ref_12
+      - *ref_13
