@@ -194,7 +194,10 @@ sections:
       collapsed: false
       hideForGuests: false
     widgets:
-      - type: public-ip
+      - type: domain-monitor    
+        options:
+          domain: example.com
+          apiKey: c4d7b24e7561cafff96e1adab9a92e62
     items:
       - &ref_14
         title: Cloudflare
