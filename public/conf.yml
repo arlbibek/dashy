@@ -194,14 +194,13 @@ sections:
       collapsed: false
       hideForGuests: false
     widgets:
-      - type: domain-monitor    
+      - type: github-profile-stats
         options:
-          domain: bibeka.com.np
-          apiKey: c4d7b24e7561cafff96e1adab9a92e62
-      - type: domain-monitor    
-        options:
-          domain: lifetimelearning.edu.np
-          apiKey: c4d7b24e7561cafff96e1adab9a92e62
+          username: arlbibek
+          hideLanguagesCard: true
+          repos:
+          - arlbibek/dVoting
+          - arlbibek/windows-ahk
     items:
       - &ref_14
         title: Cloudflare
