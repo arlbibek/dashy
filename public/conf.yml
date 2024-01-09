@@ -1,17 +1,5 @@
-pageInfo:
-  title: Dashy 🌺
-  description: ''
-  navLinks:
-    - title: arlbibek/dashy
-      path: https://github.com/arlbibek/dashy
-      target: newtab
-    - title: dashy.to/docs
-      path: https://dashy.to/docs
-      target: newtab
-  footerText: Made with ❤️ by <a href="https://bibeka.com.np/">Bibek Aryal</a>.
-  logo: https://www.bibeka.com.np/images/favicon.png
 appConfig:
-  theme: colorful
+  theme: adventure-basic
   layout: auto
   iconSize: small
   language: en
@@ -55,8 +43,25 @@ appConfig:
   disableSmartSort: false
   enableErrorReporting: false
   workspaceLandingUrl: https://dashy.bibeka.com.np/
+  customColors:
+    oblivion:
+      primary: '#d9d9d9'
+      background: '#1b2431'
+      background-darker: '#121a25'
+pageInfo:
+  title: D A S H Y
+  description: ''
+  navLinks:
+    - title: arlbibek/dashy
+      path: https://github.com/arlbibek/dashy
+      target: newtab
+    - title: dashy.to/docs
+      path: https://dashy.to/docs
+      target: newtab
+  footerText: Made with ❤️ by <a href="https://bibeka.com.np/">Bibek Aryal</a>.
+  logo: ''
 sections:
-  - name: Profiles
+  - name: Date and time
     icon: fas fa-rocket
     widgets:
       - type: clock
@@ -64,129 +69,22 @@ sections:
           timeZone: Asia/Kathmandu
           format: en-GB
           hideDate: false
-        id: 0_836_clock
-    items:
-      - &ref_0
-        title: bibeka.com.np
-        icon: https://bibeka.com.np/images/favicon.png
-        url: https://bibeka.com.np
-        id: 0_836_bibekacomnp
-      - &ref_1
-        title: arlbibek
-        icon: https://github.com/fluidicon.png
-        url: https://github.com/arlbibek
-        target: newtab
-        id: 1_836_arlbibek
-      - &ref_2
-        title: Reusme
-        icon: <span class="material-symbols-outlined"> picture_as_pdf </span>
-        url: https://bibeka.com.np/resume
-        target: newtab
-        id: 2_836_reusme
-    filteredItems:
-      - *ref_0
-      - *ref_1
-      - *ref_2
+        id: 0_1184_clock
+    items: []
+    filteredItems: []
     displayData:
       sortBy: default
       rows: 1
       cols: 1
       collapsed: false
       hideForGuests: false
-  - name: Sites
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - &ref_3
-        title: Gmail
-        icon: https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico
-        url: https://mail.google.com/mail
-        target: newtab
-        id: 0_520_gmail
-      - &ref_4
-        title: Proton Mail
-        icon: favicon
-        url: https://account.proton.me/mail
-        target: newtab
-        id: 1_520_protonmail
-      - &ref_5
-        title: Outlook
-        icon: >-
-          https://res.cdn.office.net/owamail/20231215008.09/resources/images/favicons/mail-seen.ico
-        url: https://outlook.office.com/mail/
-        target: newtab
-        id: 2_520_outlook
-    filteredItems:
-      - *ref_3
-      - *ref_4
-      - *ref_5
-  - name: Nepal Sites
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - &ref_6
-        title: SSF Portal
-        description: Social Security Fund
-        icon: https://sosys.ssf.gov.np/Images/favicon.jpg
-        url: https://sosys.ssf.gov.np/Modules/REGISTRATION/ContributorLogin.aspx
-        target: newtab
-        id: 0_1048_ssfportal
-      - &ref_7
-        title: OPCR
-        description: Online Police Clearance Registration System
-        icon: https://opcr.nepalpolice.gov.np/favicon.ico
-        url: https://opcr.nepalpolice.gov.np
-        target: newtab
-        id: 1_1048_opcr
-      - &ref_8
-        title: Mero Share
-        icon: https://meroshare.cdsc.com.np/assets/img/favicon.png
-        url: https://meroshare.cdsc.com.np/
-        target: newtab
-        id: 2_1048_meroshare
-      - &ref_9
-        title: NEPSE
-        icon: https://tms52.nepsetms.com.np/assets/images/logo_new.png
-        url: https://tms52.nepsetms.com.np/login
-        id: 3_1048_nepse
-      - &ref_10
-        title: NPSE Alpha
-        icon: https://www.nepsealpha.com/images/logo.jpg
-        url: https://www.nepsealpha.com/
-        id: 4_1048_npsealpha
-      - &ref_11
-        title: Khalti
-        icon: favicon
-        url: https://khalti.com/
-        id: 5_1048_khalti
-      - &ref_12
-        title: eSewa
-        icon: favicon
-        url: https://www.esewa.com.np/#/home
-        id: 6_1048_esewa
-      - &ref_13
-        title: Connect IPS
-        icon: https://www.connectips.com/templates/protostar/favicon.ico
-        url: https://www.connectips.com/
-        id: 7_1048_connectips
-    filteredItems:
-      - *ref_6
-      - *ref_7
-      - *ref_8
-      - *ref_9
-      - *ref_10
-      - *ref_11
-      - *ref_12
-      - *ref_13
-  - name: Domain Monitor
+  - name: Weather
+      widgets:
+      - type: public-ip
+  - name: IP Address
+    widgets:
+      - type: public-ip
+  - name: Github
     displayData:
       sortBy: default
       rows: 1
@@ -199,32 +97,78 @@ sections:
           username: arlbibek
           hideLanguagesCard: true
           repos:
-          - arlbibek/dVoting
-          - arlbibek/windows-ahk
+            - arlbibek/dVoting
+            - arlbibek/windows-ahk
+        id: 0_611_githubprofilestats
     items:
-      - &ref_14
-        title: Cloudflare
-        icon: favicon
-        url: https://dash.cloudflare.com/
-        target: newtab
-        id: 0_1376_cloudflare
-      - &ref_15
-        title: .np Domain
-        icon: https://register.com.np/images/favicon.png
-        url: https://register.com.np/
-        target: newtab
-        id: 1_1376_npdomain
-      - &ref_16
-        title: bibeka.com.np
-        url: https://bibeka.com.np/
-        target: newtab
-        id: 2_1376_bibekacomnp
-      - &ref_17
-        title: lifetimelearning.edu.np
-        url: https://lifetimelearning.edu.np
-        id: 3_1376_lifetimelearningedunp
+      - &ref_0
+        title: GitHub
+        icon: https://github.com/fluidicon.png
+        url: https://github.com/arlbibek
+        id: 0_611_github
+      - &ref_1
+        title: arlbibek
+        icon: https://avatars.githubusercontent.com/u/53701945
+        url: https://github.com/arlbibek
+        id: 1_611_arlbibek
     filteredItems:
-      - *ref_14
-      - *ref_15
-      - *ref_16
-      - *ref_17
+      - *ref_0
+      - *ref_1
+    icon: https://github.com/fluidicon.png
+  - name: Sites
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_2
+        title: Gmail
+        icon: https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico
+        url: https://mail.google.com/mail
+        id: 0_520_gmail
+      - &ref_3
+        title: Proton Mail
+        icon: favicon
+        url: https://account.proton.me/mail
+        id: 1_520_protonmail
+    filteredItems:
+      - *ref_2
+      - *ref_3
+  - name: Sites Nepal
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_4
+        title: SSF Portal
+        description: Social Security Fund
+        icon: https://sosys.ssf.gov.np/Images/favicon.jpg
+        url: https://sosys.ssf.gov.np/Modules/REGISTRATION/ContributorLogin.aspx
+        id: 0_1048_ssfportal
+      - &ref_5
+        title: OPCR
+        description: Online Police Clearance Registration System
+        icon: https://opcr.nepalpolice.gov.np/favicon.ico
+        url: https://opcr.nepalpolice.gov.np
+        id: 1_1048_opcr
+      - &ref_6
+        title: NEPSE
+        description: NEPAL STOCK EXCHANGETrade Management System
+        icon: https://tms52.nepsetms.com.np/assets/images/logo_new.png
+        url: https://tms52.nepsetms.com.np/
+        id: 2_1048_nepse
+      - &ref_7
+        title: NPSE Alpha
+        icon: https://www.nepsealpha.com/images/logo.jpg
+        url: https://www.nepsealpha.com/
+        id: 3_1048_npsealpha
+    filteredItems:
+      - *ref_4
+      - *ref_5
+      - *ref_6
+      - *ref_7
