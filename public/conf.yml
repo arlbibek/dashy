@@ -186,3 +186,20 @@ sections:
       - *ref_11
       - *ref_12
       - *ref_13
+  - name: Domain(s)
+    icon: fas fa-rocket
+    widgets:
+      - type: clock
+        options:
+          timeZone: Asia/Kathmandu
+          format: en-GB
+          hideDate: false
+        id: 0_1184_clock
+      - type: domain-monitor
+          options:
+           domain: bibeka.com.np
+           apiKey: c4d7b24e7561cafff96e1adab9a92e62
+      - type: domain-monitor
+          options:
+           domain: lifetimelearning.edu.np
+           apiKey: c4d7b24e7561cafff96e1adab9a92e62
